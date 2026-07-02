@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LocalClip para Windows</title>
-  <meta name="description" content="Descarga LocalClip para Windows y sincroniza portapapeles, capturas y archivos entre Android y Windows por tu red local.">
-  <meta property="og:title" content="LocalClip - Android y Windows al instante">
-  <meta property="og:description" content="Portapapeles, capturas y archivos entre tu celular Android y tu PC Windows.">
+  <title>LocalClip for Windows</title>
+  <meta name="description" content="Download LocalClip for Windows and sync clipboard text, screenshots, and files between Android and Windows on your local network.">
+  <meta property="og:title" content="LocalClip - Android and Windows sync">
+  <meta property="og:description" content="Clipboard text, screenshots, and files between your Android phone and Windows PC.">
   <meta property="og:image" content="https://localclip-synchronization.com/assets/localclip-hero-1w5th6Pt.jpg">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="LocalClip inicio">
+    <a class="brand" href="index.html" aria-label="LocalClip home">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none">
           <path d="M7 8.5h7a3.5 3.5 0 0 1 0 7h-2.5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
@@ -25,132 +25,143 @@
       </span>
       <span>LocalClip</span>
     </a>
-    <a class="header-download" href="#descargar">Descargar</a>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Language">
+        <span class="language-globe" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M3.5 12h17M12 3c2.4 2.4 3.6 5.4 3.6 9s-1.2 6.6-3.6 9M12 3C9.6 5.4 8.4 8.4 8.4 12s1.2 6.6 3.6 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <button class="lang-option active" type="button" data-lang-switch="en" aria-pressed="true">EN</button>
+        <button class="lang-option" type="button" data-lang-switch="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-copy">
-          <span class="eyebrow">LocalClip para Windows</span>
-          <h1>Sincroniza tu celular Android con tu PC al instante.</h1>
-          <p>Portapapeles, capturas de pantalla y archivos entre Android y Windows en tu red local, sin pasos complicados.</p>
-          <div class="hero-actions" id="descargar">
-            <a class="primary-btn" href="https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v0.1.103/LocalClip-Windows-Setup-v0.1.103.exe">Descargar para PC</a>
-            <a class="secondary-btn" href="#instalar">Ver como funciona</a>
+          <span class="eyebrow" data-i18n="heroEyebrow">LocalClip for Windows</span>
+          <h1 data-i18n="heroTitle">Sync your Android phone with your PC instantly.</h1>
+          <p data-i18n="heroText">Clipboard text, screenshots, and files between Android and Windows on your local network, without complicated steps.</p>
+          <div class="hero-actions" id="download">
+            <a class="primary-btn download-link" href="https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v1.0.0/LocalClip-Windows-Setup-v1.0.0.exe" data-i18n="downloadPc">Download for PC</a>
+            <a class="secondary-btn" href="#install" data-i18n="seeHow">See how it works</a>
           </div>
-          <p class="version-note">Windows 0.1.103 - Instalador para Windows x64.</p>
+          <p class="version-note" data-i18n="versionNote">Windows 1.0.0 - Installer for Windows x64.</p>
         </div>
         <div class="hero-card">
-          <img src="assets/localclip-hero-1w5th6Pt.jpg" alt="LocalClip sincronizando Android y Windows">
+          <img src="assets/localclip-hero-1w5th6Pt.jpg" alt="LocalClip syncing Android and Windows" data-i18n-alt="heroImageAlt">
         </div>
       </div>
     </section>
 
-    <section class="container quick-grid" aria-label="Funciones principales">
+    <section class="container quick-grid" aria-label="Main features" data-i18n-aria="mainFeatures">
       <article>
-        <span class="icon">⌘</span>
-        <h2>Portapapeles</h2>
-        <p>Texto y capturas listas para pegar entre celular y PC.</p>
+        <span class="icon">CL</span>
+        <h2 data-i18n="quickClipboardTitle">Clipboard</h2>
+        <p data-i18n="quickClipboardText">Text and screenshots ready to paste between phone and PC.</p>
       </article>
       <article>
-        <span class="icon">⇪</span>
-        <h2>Archivos</h2>
-        <p>Envia uno o varios archivos con progreso claro.</p>
+        <span class="icon">FS</span>
+        <h2 data-i18n="quickFilesTitle">Files</h2>
+        <p data-i18n="quickFilesText">Send one or multiple files with clear progress.</p>
       </article>
       <article>
-        <span class="icon">▦</span>
-        <h2>QR local</h2>
-        <p>Vincula rapido ambos dispositivos en la misma red.</p>
+        <span class="icon">QR</span>
+        <h2 data-i18n="quickQrTitle">Local QR</h2>
+        <p data-i18n="quickQrText">Pair both devices quickly on the same network.</p>
       </article>
     </section>
 
     <section class="container section">
-      <p class="eyebrow">Hecho para uso diario</p>
-      <h2>Una app de PC simple para acompanar LocalClip Android.</h2>
+      <p class="eyebrow" data-i18n="dailyEyebrow">Built for daily use</p>
+      <h2 data-i18n="dailyTitle">A simple PC app that works with LocalClip Android.</h2>
       <div class="feature-grid">
         <article>
-          <span class="feature-icon">☑</span>
-          <h3>Capturas al portapapeles</h3>
-          <p>Una captura tomada en Android llega a Windows lista para pegar, y las capturas de PC llegan al celular.</p>
+          <span class="feature-icon">OK</span>
+          <h3 data-i18n="featureScreenshotsTitle">Screenshots to clipboard</h3>
+          <p data-i18n="featureScreenshotsText">A screenshot taken on Android arrives on Windows ready to paste, and PC screenshots arrive on your phone.</p>
         </article>
         <article>
-          <span class="feature-icon">⇄</span>
-          <h3>Transferencia de archivos</h3>
-          <p>Envia uno o varios archivos entre dispositivos y conserva un historial claro de cada lote.</p>
+          <span class="feature-icon">IO</span>
+          <h3 data-i18n="featureFilesTitle">File transfer</h3>
+          <p data-i18n="featureFilesText">Send one or multiple files between devices and keep a clear history for each batch.</p>
         </article>
         <article>
-          <span class="feature-icon">▣</span>
-          <h3>Historial visual</h3>
-          <p>La app de PC muestra texto y miniaturas de capturas para copiar o arrastrar cuando lo necesites.</p>
+          <span class="feature-icon">IMG</span>
+          <h3 data-i18n="featureHistoryTitle">Visual history</h3>
+          <p data-i18n="featureHistoryText">The PC app shows text and screenshot thumbnails so you can copy or drag them when needed.</p>
         </article>
       </div>
     </section>
 
-    <section class="install-band" id="instalar">
+    <section class="install-band" id="install">
       <div class="container install-layout">
         <div>
-          <p class="eyebrow">Instalacion</p>
-          <h2>Descarga, instala y escanea el QR desde Android.</h2>
-          <p>El instalador crea accesos directos, registra LocalClip en Windows y no requiere instalar .NET manualmente.</p>
-          <a class="primary-btn small" href="https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v0.1.103/LocalClip-Windows-Setup-v0.1.103.exe">Descargar para PC</a>
+          <p class="eyebrow" data-i18n="installEyebrow">Installation</p>
+          <h2 data-i18n="installTitle">Download, install, and scan the QR from Android.</h2>
+          <p data-i18n="installText">The installer creates shortcuts, registers LocalClip in Windows, and does not require installing .NET manually.</p>
+          <a class="primary-btn small download-link" href="https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v1.0.0/LocalClip-Windows-Setup-v1.0.0.exe" data-i18n="downloadPc">Download for PC</a>
         </div>
         <ol class="steps">
-          <li><span>1</span>Descarga el instalador de Windows.</li>
-          <li><span>2</span>Abre LocalClip en tu PC.</li>
-          <li><span>3</span>Escanea el QR desde la app Android.</li>
-          <li><span>4</span>Empieza a sincronizar portapapeles, capturas y archivos.</li>
+          <li><span>1</span><span data-i18n="step1">Download the Windows installer.</span></li>
+          <li><span>2</span><span data-i18n="step2">Open LocalClip on your PC.</span></li>
+          <li><span>3</span><span data-i18n="step3">Scan the QR from the Android app.</span></li>
+          <li><span>4</span><span data-i18n="step4">Start syncing clipboard text, screenshots, and files.</span></li>
         </ol>
       </div>
     </section>
 
     <section class="container security-card">
       <div>
-        <span class="feature-icon">✓</span>
-        <p class="eyebrow">Privado por diseno</p>
-        <h2>Tus datos se quedan en tu red local.</h2>
-        <p>Las transferencias de LocalClip ocurren directamente entre tu celular y tu PC en la misma Wi-Fi. No necesitas una cuenta en la nube para mover tu portapapeles, capturas y archivos.</p>
+        <span class="feature-icon">OK</span>
+        <p class="eyebrow" data-i18n="privacyEyebrow">Private by design</p>
+        <h2 data-i18n="privacyTitle">Your data stays on your local network.</h2>
+        <p data-i18n="privacyText">LocalClip transfers happen directly between your phone and your PC on the same Wi-Fi. You do not need a cloud account to move clipboard text, screenshots, and files.</p>
       </div>
       <ul>
-        <li>Transferencia directa entre dispositivos</li>
-        <li>Funciona en tu propia red Wi-Fi</li>
-        <li>Sin subir archivos a una nube de LocalClip</li>
+        <li data-i18n="privacyBullet1">Direct transfer between devices</li>
+        <li data-i18n="privacyBullet2">Works on your own Wi-Fi network</li>
+        <li data-i18n="privacyBullet3">No files uploaded to a LocalClip cloud</li>
       </ul>
     </section>
 
     <section class="platform-band">
       <div class="container section compact">
-        <p class="eyebrow">Android + Windows</p>
-        <h2>Pensado para tus dos dispositivos.</h2>
+        <p class="eyebrow" data-i18n="platformEyebrow">Android + Windows</p>
+        <h2 data-i18n="platformTitle">Made for your two devices.</h2>
         <div class="platform-grid">
           <article>
-            <h3>App de Windows</h3>
-            <p>Instalador profesional .NET 8. Vinculacion por QR, envio de archivos e historial con pestanas Texto y Capturas.</p>
-            <a class="primary-btn small" href="https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v0.1.103/LocalClip-Windows-Setup-v0.1.103.exe">Descargar para PC</a>
+            <h3 data-i18n="windowsAppTitle">Windows app</h3>
+            <p data-i18n="windowsAppText">Professional .NET 8 installer. QR pairing, file transfer, and history tabs for Text and Screenshots.</p>
+            <a class="primary-btn small download-link" href="https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v1.0.0/LocalClip-Windows-Setup-v1.0.0.exe" data-i18n="downloadPc">Download for PC</a>
           </article>
           <article>
-            <h3>App de Android</h3>
-            <p>Escanea para conectar, envia archivos, gestiona el historial y usa el teclado LocalClip Board integrado.</p>
-            <span class="pill">Proximamente en Google Play</span>
+            <h3 data-i18n="androidAppTitle">Android app</h3>
+            <p data-i18n="androidAppText">Scan to connect, send files, manage received files, and use the integrated LocalClip Board keyboard.</p>
+            <span class="pill" data-i18n="googlePlaySoon">Coming soon on Google Play</span>
           </article>
         </div>
       </div>
     </section>
 
     <section class="container faq">
-      <p class="eyebrow">Preguntas frecuentes</p>
-      <h2>Resolvemos tus dudas.</h2>
+      <p class="eyebrow" data-i18n="faqEyebrow">Frequently asked questions</p>
+      <h2 data-i18n="faqTitle">Answers before you download.</h2>
       <details open>
-        <summary>¿LocalClip es gratis?</summary>
-        <p>Si. La app de Windows es gratuita para descargar e instalar desde esta pagina.</p>
+        <summary data-i18n="faqFreeQ">Is LocalClip free?</summary>
+        <p data-i18n="faqFreeA">Yes. The Windows app is free to download and install from this page.</p>
       </details>
       <details>
-        <summary>¿Necesito ambas apps?</summary>
-        <p>Si. Instala la app de Windows en tu PC y usa la app Android de LocalClip para vincular por QR.</p>
+        <summary data-i18n="faqBothQ">Do I need both apps?</summary>
+        <p data-i18n="faqBothA">Yes. Install the Windows app on your PC and use the LocalClip Android app to pair by QR.</p>
       </details>
       <details>
-        <summary>¿Necesita una cuenta en internet?</summary>
-        <p>No. Las transferencias ocurren por tu red local entre el celular y la PC.</p>
+        <summary data-i18n="faqAccountQ">Does it require an internet account?</summary>
+        <p data-i18n="faqAccountA">No. Transfers happen on your local network between your phone and PC.</p>
       </details>
     </section>
   </main>
@@ -167,16 +178,185 @@
           </span>
           <span>LocalClip</span>
         </a>
-        <p>Sincroniza portapapeles, capturas y archivos entre Android y Windows.</p>
+        <p data-i18n="footerText">Sync clipboard text, screenshots, and files between Android and Windows.</p>
       </div>
-      <nav aria-label="Legal y contacto">
-        <a href="privacy.html">Politica de privacidad</a>
-        <a href="terms.html">Terminos y condiciones</a>
-        <a href="license.html">Acuerdo de licencia</a>
-        <a href="mailto:webbusinesstoolspro@gmail.com">Contacto</a>
+      <nav aria-label="Legal and contact" data-i18n-aria="legalContact">
+        <a href="privacy.html" data-i18n="privacyLink">Privacy policy</a>
+        <a href="terms.html" data-i18n="termsLink">Terms and conditions</a>
+        <a href="mailto:webbusinesstoolspro@gmail.com" data-i18n="contactLink">Contact</a>
       </nav>
     </div>
-    <p class="copyright">Copyright © 2026 localclip-synchronization.com - Todos los derechos reservados.</p>
+    <p class="copyright" data-i18n="copyright">Copyright © 2026 localclip-synchronization.com - All rights reserved.</p>
   </footer>
+
+  <script>
+    const DOWNLOAD_URL = "https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v1.0.0/LocalClip-Windows-Setup-v1.0.0.exe";
+
+    const translations = {
+      en: {
+        title: "LocalClip for Windows",
+        metaDescription: "Download LocalClip for Windows and sync clipboard text, screenshots, and files between Android and Windows on your local network.",
+        heroEyebrow: "LocalClip for Windows",
+        heroTitle: "Sync your Android phone with your PC instantly.",
+        heroText: "Clipboard text, screenshots, and files between Android and Windows on your local network, without complicated steps.",
+        downloadPc: "Download for PC",
+        seeHow: "See how it works",
+        versionNote: "Windows 1.0.0 - Installer for Windows x64.",
+        heroImageAlt: "LocalClip syncing Android and Windows",
+        mainFeatures: "Main features",
+        quickClipboardTitle: "Clipboard",
+        quickClipboardText: "Text and screenshots ready to paste between phone and PC.",
+        quickFilesTitle: "Files",
+        quickFilesText: "Send one or multiple files with clear progress.",
+        quickQrTitle: "Local QR",
+        quickQrText: "Pair both devices quickly on the same network.",
+        dailyEyebrow: "Built for daily use",
+        dailyTitle: "A simple PC app that works with LocalClip Android.",
+        featureScreenshotsTitle: "Screenshots to clipboard",
+        featureScreenshotsText: "A screenshot taken on Android arrives on Windows ready to paste, and PC screenshots arrive on your phone.",
+        featureFilesTitle: "File transfer",
+        featureFilesText: "Send one or multiple files between devices and keep a clear history for each batch.",
+        featureHistoryTitle: "Visual history",
+        featureHistoryText: "The PC app shows text and screenshot thumbnails so you can copy or drag them when needed.",
+        installEyebrow: "Installation",
+        installTitle: "Download, install, and scan the QR from Android.",
+        installText: "The installer creates shortcuts, registers LocalClip in Windows, and does not require installing .NET manually.",
+        step1: "Download the Windows installer.",
+        step2: "Open LocalClip on your PC.",
+        step3: "Scan the QR from the Android app.",
+        step4: "Start syncing clipboard text, screenshots, and files.",
+        privacyEyebrow: "Private by design",
+        privacyTitle: "Your data stays on your local network.",
+        privacyText: "LocalClip transfers happen directly between your phone and your PC on the same Wi-Fi. You do not need a cloud account to move clipboard text, screenshots, and files.",
+        privacyBullet1: "Direct transfer between devices",
+        privacyBullet2: "Works on your own Wi-Fi network",
+        privacyBullet3: "No files uploaded to a LocalClip cloud",
+        platformEyebrow: "Android + Windows",
+        platformTitle: "Made for your two devices.",
+        windowsAppTitle: "Windows app",
+        windowsAppText: "Professional .NET 8 installer. QR pairing, file transfer, and history tabs for Text and Screenshots.",
+        androidAppTitle: "Android app",
+        androidAppText: "Scan to connect, send files, manage received files, and use the integrated LocalClip Board keyboard.",
+        googlePlaySoon: "Coming soon on Google Play",
+        faqEyebrow: "Frequently asked questions",
+        faqTitle: "Answers before you download.",
+        faqFreeQ: "Is LocalClip free?",
+        faqFreeA: "Yes. The Windows app is free to download and install from this page.",
+        faqBothQ: "Do I need both apps?",
+        faqBothA: "Yes. Install the Windows app on your PC and use the LocalClip Android app to pair by QR.",
+        faqAccountQ: "Does it require an internet account?",
+        faqAccountA: "No. Transfers happen on your local network between your phone and PC.",
+        footerText: "Sync clipboard text, screenshots, and files between Android and Windows.",
+        legalContact: "Legal and contact",
+        privacyLink: "Privacy policy",
+        termsLink: "Terms and conditions",
+        contactLink: "Contact",
+        copyright: "Copyright © 2026 localclip-synchronization.com - All rights reserved."
+      },
+      es: {
+        title: "LocalClip para Windows",
+        metaDescription: "Descarga LocalClip para Windows y sincroniza textos del portapapeles, capturas y archivos entre Android y Windows por tu red local.",
+        heroEyebrow: "LocalClip para Windows",
+        heroTitle: "Sincroniza tu celular Android con tu PC al instante.",
+        heroText: "Textos del portapapeles, capturas de pantalla y archivos entre Android y Windows en tu red local, sin pasos complicados.",
+        downloadPc: "Descargar para PC",
+        seeHow: "Ver como funciona",
+        versionNote: "Windows 1.0.0 - Instalador para Windows x64.",
+        heroImageAlt: "LocalClip sincronizando Android y Windows",
+        mainFeatures: "Funciones principales",
+        quickClipboardTitle: "Portapapeles",
+        quickClipboardText: "Texto y capturas listas para pegar entre celular y PC.",
+        quickFilesTitle: "Archivos",
+        quickFilesText: "Envia uno o varios archivos con progreso claro.",
+        quickQrTitle: "QR local",
+        quickQrText: "Vincula rapido ambos dispositivos en la misma red.",
+        dailyEyebrow: "Hecho para uso diario",
+        dailyTitle: "Una app de PC simple para acompanar LocalClip Android.",
+        featureScreenshotsTitle: "Capturas al portapapeles",
+        featureScreenshotsText: "Una captura tomada en Android llega a Windows lista para pegar, y las capturas de PC llegan al celular.",
+        featureFilesTitle: "Transferencia de archivos",
+        featureFilesText: "Envia uno o varios archivos entre dispositivos y conserva un historial claro de cada lote.",
+        featureHistoryTitle: "Historial visual",
+        featureHistoryText: "La app de PC muestra texto y miniaturas de capturas para copiar o arrastrar cuando lo necesites.",
+        installEyebrow: "Instalacion",
+        installTitle: "Descarga, instala y escanea el QR desde Android.",
+        installText: "El instalador crea accesos directos, registra LocalClip en Windows y no requiere instalar .NET manualmente.",
+        step1: "Descarga el instalador de Windows.",
+        step2: "Abre LocalClip en tu PC.",
+        step3: "Escanea el QR desde la app Android.",
+        step4: "Empieza a sincronizar textos, capturas y archivos.",
+        privacyEyebrow: "Privado por diseno",
+        privacyTitle: "Tus datos se quedan en tu red local.",
+        privacyText: "Las transferencias de LocalClip ocurren directamente entre tu celular y tu PC en la misma Wi-Fi. No necesitas una cuenta en la nube para mover textos, capturas y archivos.",
+        privacyBullet1: "Transferencia directa entre dispositivos",
+        privacyBullet2: "Funciona en tu propia red Wi-Fi",
+        privacyBullet3: "Sin subir archivos a una nube de LocalClip",
+        platformEyebrow: "Android + Windows",
+        platformTitle: "Pensado para tus dos dispositivos.",
+        windowsAppTitle: "App de Windows",
+        windowsAppText: "Instalador profesional .NET 8. Vinculacion por QR, envio de archivos e historial con pestanas Texto y Capturas.",
+        androidAppTitle: "App de Android",
+        androidAppText: "Escanea para conectar, envia archivos, gestiona archivos recibidos y usa el teclado LocalClip Board integrado.",
+        googlePlaySoon: "Proximamente en Google Play",
+        faqEyebrow: "Preguntas frecuentes",
+        faqTitle: "Resolvemos tus dudas.",
+        faqFreeQ: "¿LocalClip es gratis?",
+        faqFreeA: "Si. La app de Windows es gratuita para descargar e instalar desde esta pagina.",
+        faqBothQ: "¿Necesito ambas apps?",
+        faqBothA: "Si. Instala la app de Windows en tu PC y usa la app Android de LocalClip para vincular por QR.",
+        faqAccountQ: "¿Necesita una cuenta en internet?",
+        faqAccountA: "No. Las transferencias ocurren por tu red local entre el celular y la PC.",
+        footerText: "Sincroniza textos del portapapeles, capturas y archivos entre Android y Windows.",
+        legalContact: "Legal y contacto",
+        privacyLink: "Politica de privacidad",
+        termsLink: "Terminos y condiciones",
+        contactLink: "Contacto",
+        copyright: "Copyright © 2026 localclip-synchronization.com - Todos los derechos reservados."
+      }
+    };
+
+    function applyLanguage(lang) {
+      const selected = translations[lang] ? lang : "en";
+      const dict = translations[selected];
+
+      document.documentElement.lang = selected;
+      document.title = dict.title;
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute("content", dict.metaDescription);
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (dict[key]) element.textContent = dict[key];
+      });
+
+      document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+        const key = element.getAttribute("data-i18n-alt");
+        if (dict[key]) element.setAttribute("alt", dict[key]);
+      });
+
+      document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
+        const key = element.getAttribute("data-i18n-aria");
+        if (dict[key]) element.setAttribute("aria-label", dict[key]);
+      });
+
+      document.querySelectorAll("[data-lang-switch]").forEach((button) => {
+        const active = button.getAttribute("data-lang-switch") === selected;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+
+      document.querySelectorAll(".download-link").forEach((link) => {
+        link.setAttribute("href", DOWNLOAD_URL);
+      });
+
+      localStorage.setItem("localclipLanguage", selected);
+    }
+
+    document.querySelectorAll("[data-lang-switch]").forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.getAttribute("data-lang-switch")));
+    });
+
+    applyLanguage(localStorage.getItem("localclipLanguage") || "en");
+  </script>
 </body>
 </html>
