@@ -8,4 +8,4 @@ Pagina estatica lista para GitHub Pages.
 2. Mantener el archivo `CNAME` con `localclip-synchronization.com`.
 3. En GoDaddy, apuntar el dominio a GitHub Pages siguiendo la configuracion DNS de GitHub.
 4. El boton principal descarga el instalador actual desde GitHub Releases:
-   `https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v0.1.103/LocalClip-Windows-Setup-v0.1.103.exe`.
+   `https://github.com/blasmani/PAGINA-WEB-DE-LOCAL-CLIP/releases/download/v1.0.0/LocalClip-Windows-Setup-v1.0.0.exe`.
